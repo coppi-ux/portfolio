@@ -674,3 +674,128 @@ main { padding-left: var(--pad-l); }
 /* "preview not available yet": icon in a soft white circle, colors taken from the card */
 .shot.empty svg { box-sizing: border-box; width: 68px; height: 68px; padding: 15px; background: rgba(255, 255, 255, .65); border-radius: 50%; box-shadow: 0 4px 10px rgba(0, 0, 0, .06); }
 .shot.empty span { opacity: .85; }
+
+
+/* ---------- PDF / PRINT LAYOUT ---------- */
+@media print {
+  @page {
+    size: A4;
+    margin: 12mm;
+  }
+
+  html,
+  body {
+    background: #ffffff !important;
+    color: #1f2d52 !important;
+    font-size: 10pt;
+    line-height: 1.45;
+    scroll-behavior: auto;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  /* Remove browser-only navigation and interactions */
+  .nav,
+  #contact form,
+  #photo-card,
+  .spine,
+  .lightbox,
+  .cursor {
+    display: none !important;
+  }
+
+  main {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+    box-shadow: none;
+    background: #ffffff;
+  }
+
+  section {
+    padding: 16px 0;
+    break-inside: auto;
+  }
+
+  .hero {
+    margin: 0;
+    padding: 20px 0;
+    background: #e6f0f7 !important;
+    border-radius: 0;
+    break-inside: avoid;
+  }
+
+  /* Ensure all content is visible in the PDF */
+  .reveal,
+  .reveal.in {
+    opacity: 1 !important;
+    transform: none !important;
+    animation: none !important;
+  }
+
+  .cards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+  }
+
+  .cards-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+  }
+
+  .card,
+  .pcard,
+  .kos,
+  .t-card {
+    box-shadow: none !important;
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  .kos {
+    display: block;
+  }
+
+  .kos-info,
+  .kos-shots {
+    width: 100%;
+  }
+
+  .kos-shot {
+    break-inside: avoid;
+  }
+
+  .shot {
+    min-height: 0;
+    height: auto;
+  }
+
+  .shot img,
+  .kos-shot img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 220px;
+    object-fit: contain;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  a {
+    color: #0d47a1 !important;
+    overflow-wrap: anywhere;
+  }
+
+  .repo-btn,
+  .links a {
+    box-shadow: none !important;
+  }
+
+  footer {
+    padding: 12px 0;
+  }
+}
