@@ -145,9 +145,27 @@ footer { text-align: center; padding: 1rem 1rem 2rem; color: var(--muted); font-
   --tint: #d9effe; --edge: #7fc4f0; --txt: #0c5a8a;
   --badge-bg: #fde68a; --badge-edge: #d4a017; --badge-txt: #6b4e00;
 }
-.pcard:nth-child(3n+1) { --badge-bg: #bfe3fb; --badge-edge: #4aa3e0; --badge-txt: #0c5a8a; }
-.pcard:nth-child(3n+2) { --tint: #ffe0e6; --edge: #fe9fae; --txt: #8b1d2c; }   /* pink */
-.pcard:nth-child(3n)   { --tint: #d1fae5; --edge: #7fe0b0; --txt: #0f6b45; }   /* mint */
+/* Personal preview colors — preserved after year sorting */
+#personal-list .pcard:nth-child(1) {
+  --tint: #d9effe;
+  --edge: #7fc4f0;
+  --txt: #0c5a8a;
+  --badge-bg: #bfe3fb;
+  --badge-edge: #4aa3e0;
+  --badge-txt: #0c5a8a;
+}
+
+#personal-list .pcard:nth-child(2) {
+  --tint: #d1fae5;
+  --edge: #7fe0b0;
+  --txt: #0f6b45;
+}
+
+#personal-list .pcard:nth-child(3) {
+  --tint: #ffe0e6;
+  --edge: #fe9fae;
+  --txt: #8b1d2c;
+}  /* mint */
 
 .pcard .shot { background: var(--tint); border-color: var(--edge); }
 .pcard .shot .label { color: var(--txt); border-color: var(--edge); overflow-wrap: anywhere; }
@@ -158,10 +176,13 @@ footer { text-align: center; padding: 1rem 1rem 2rem; color: var(--muted); font-
 /* ---------- academic cards: 2 across, each with its own color ---------- */
 .cards-2 { grid-template-columns: repeat(2, 1fr); gap: 1.6rem; }
 @media (max-width: 700px) { .cards-2 { grid-template-columns: 1fr; } }
-.cards-2 .pcard:nth-child(1) { --tint: #dbeafe; --edge: #7fb3f5; --txt: #1d4ed8; }   /* blue */
-.cards-2 .pcard:nth-child(2) { --tint: #ffe9e6; --edge: #fda4a4; --txt: #b91c1c; }   /* pink */
-.cards-2 .pcard:nth-child(3) { --tint: #d1fae5; --edge: #7fe0b0; --txt: #047857; }   /* green */
-.cards-2 .pcard:nth-child(4) { --tint: #e2e8f0; --edge: #94a3b8; --txt: #334155; }   /* slate */
+
+/* Academic preview colors — adjusted for the new project order */
+.cards-2 .pcard:nth-child(1) { --tint: #d1fae5; --edge: #7fe0b0; --txt: #047857; } /* green */
+.cards-2 .pcard:nth-child(2) { --tint: #dbeafe; --edge: #7fb3f5; --txt: #1d4ed8; } /* blue */
+.cards-2 .pcard:nth-child(3) { --tint: #ffe9e6; --edge: #fda4a4; --txt: #b91c1c; } /* pink */
+.cards-2 .pcard:nth-child(4) { --tint: #fef3c7; --edge: #fbbf24; --txt: #92400e; } /* yellow */
+.cards-2 .pcard:nth-child(5) { --tint: #e2e8f0; --edge: #94a3b8; --txt: #334155; } /* slate */
 .cards-2 .meta-row .kicker { color: var(--txt); }
 .cards-2 .meta-row .yr { background: var(--tint); color: var(--txt); }
 .cards-2 .shot { min-height: 200px; }
@@ -544,7 +565,7 @@ main { padding-left: var(--pad-l); }
 }
 .shot.empty svg { width: 44px; height: 44px; }
 .shot.empty span { font: 800 .72rem ui-monospace, Menlo, monospace; letter-spacing: .08em; text-align: center; }
-.pcard .shot.empty { background: #f5f6f8; border-color: #d3d9e2; }
+.pcard .shot.empty { background: var(--tint); border-color: var(--edge); color: var(--txt); }   /* same colors as the card's year pill */
 .pcard.no-preview, .pcard.no-preview .shot, .pcard.no-preview .tag { cursor: default; }
 .pcard .shot.empty::after { display: none; }
 
@@ -646,3 +667,10 @@ main { padding-left: var(--pad-l); }
     repeating-linear-gradient(90deg, transparent 0 27px, rgba(95, 187, 244, .2) 27px 54px),            /* vertical stripes: 27px light, 27px blue */
     repeating-linear-gradient(180deg, transparent 0 22.67px, rgba(95, 187, 244, .2) 22.67px 45.34px);  /* horizontal stripes: 3 equal rows in the 70px header */
 }
+
+/* 5th academic card (Smart Headband): purple tint */
+.cards-2 .pcard:nth-child(5) { --tint: #f3e8ff; --edge: #d8b4fe; --txt: #7e22ce; }
+
+/* "preview not available yet": icon in a soft white circle, colors taken from the card */
+.shot.empty svg { box-sizing: border-box; width: 68px; height: 68px; padding: 15px; background: rgba(255, 255, 255, .65); border-radius: 50%; box-shadow: 0 4px 10px rgba(0, 0, 0, .06); }
+.shot.empty span { opacity: .85; }

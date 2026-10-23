@@ -22,26 +22,27 @@ const projects = [
       ["images/arisanku-1.webp", "Dashboard: total pot, your status and this month's recipient"],
       ["images/arisanku-2.webp", "Payment: send proof by photo or upload, with payment history"],
       ["images/arisanku-3.webp", "Order: who receives the pot each month"]
-    ], badge: "COMPETITION", icon: "🤝", shot: "Figma Flows", caption: "Dashboard • Payment • Order Screens", kicker: "UI/UX DESIGN CHALLENGE", year: "2026", title: "Arisanku", text: "A UI/UX redesign of Indonesian \"arisan\" (rotating savings groups), focused on transparency, privacy, and judgment-free late-payment verification. Designed in Figma and tested with real usability sessions, built with team CloVer (Shafiya Ramadhani Kanata, Deneta Evelyn Simamora, Clarisse Xaviera Kurniaman) for the EEA 2026 UI/UX Design Challenge (HIMATRO Universitas Lampung).", tags: ["Figma", "Usability Testing"], link: ["View on Figma ↗", "https://www.figma.com/"] },
+    ], badge: "COMPETITION", icon: "🤝", shot: "Figma Flows", caption: "Dashboard • Payment • Order Screens", kicker: "UI/UX DESIGN CHALLENGE", year: "2026", title: "Arisanku", text: "A UI/UX redesign of Indonesian \"arisan\" (rotating savings groups), focused on transparency, privacy, and judgment-free late-payment verification. Designed in Figma and tested with real usability sessions, built with team CloVer (Shafiya Ramadhani Kanata, Deneta Evelyn Simamora, Clarisse Xaviera Kurniaman) for the EEA 2026 UI/UX Design Challenge (HIMATRO Universitas Lampung).", tags: ["Figma", "Usability Testing"], link: ["View on Figma ↗", "https://www.figma.com/proto/UXiUphjOFSBbxqHtDhOF7U/Arisanku?node-id=236-4305&p=f&t=eAMjRXmeIGNaSlbq-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1470%3A1781&show-proto-sidebar=1"] },
   { group: "personal", brief: "A pixel-art surprise gift website with mini games and a letter reveal.", image: "images/gift-cover.webp", gallery: [
       ["images/gift-1.webp", "Mini game: drag the item to the toilet"],
       ["images/gift-2.webp", "A pixel letter opens"],
       ["images/gift-3.webp", "Mini game: drag the shrimp to the pan"],
       ["images/gift-4.webp", "The shrimp is served"],
       ["images/gift-5.webp", "The final letter on the plate"]
-    ], badge: "SOLO PRANK", icon: "🦐", shot: "Web Reveal", caption: "Shrimp Plushy Unboxing Prank", kicker: "INTERACTIVE WEB", year: "2024", title: "Interactive Gift Card Website", text: "A solo, self-initiated HTML/CSS/JS surprise gift experience made for a Beelingua staff: a shrimp plushy hidden inside unexpected packaging as a prank, paired with a custom website reveal.", tags: ["HTML", "CSS", "JavaScript"], link: ["View the website ↗", "https://github.com/coppi-ux"] },
+    ], badge: "SOLO PRANK", icon: "🦐", shot: "Web Reveal", caption: "Shrimp Plushy Unboxing Prank", kicker: "INTERACTIVE WEB", year: "2024", title: "Interactive Gift Card Website", text: "A solo, self-initiated HTML/CSS/JS surprise gift experience made for a Beelingua staff: a shrimp plushy hidden inside unexpected packaging as a prank, paired with a custom website reveal.", tags: ["HTML", "CSS", "JavaScript"], link: ["View the website ↗", "https://coppi-ux.github.io/gift-card/"] },
   { group: "personal", brief: "A browser pixel game: collect all 12 pages to unlock a gift.", image: "images/grad-cover.webp", gallery: [
       ["images/grad-1.webp", "Title screen: collect all 12 pages to unlock your gift"],
       ["images/grad-2.webp", "Walk around the garden and collect the pages"],
       ["images/grad-3.webp", "All pages collected: the gift is unlocked"]
-    ], badge: "PIXEL GAME", icon: "🕹️", shot: "Canvas Game", caption: "Virtual Mobile Joystick Active", kicker: "CANVAS 2D GAME", year: "2025", title: "Graduation Quest", text: "A solo, self-initiated browser pixel game built in vanilla JavaScript and HTML5 Canvas, made to celebrate sister getting into ITB. Includes a mobile virtual joystick.", tags: ["JavaScript", "HTML5 Canvas", "Game Loop"], link: ["View the website ↗", "https://github.com/coppi-ux"] },
+    ], badge: "PIXEL GAME", icon: "🕹️", shot: "Canvas Game", caption: "Virtual Mobile Joystick Active", kicker: "CANVAS 2D GAME", year: "2025", title: "Graduation Quest", text: "A solo, self-initiated browser pixel game built in vanilla JavaScript and HTML5 Canvas, made to celebrate sister getting into ITB. Includes a mobile virtual joystick.", tags: ["JavaScript", "HTML5 Canvas", "Game Loop"], link: ["View the website ↗", "https://coppi-ux.github.io/graduation-quest/"] },
   { group: "academic", brief: "An AR app for early childhood education: scan cards to meet 3D animals.", image: "images/ar-cover.webp", gallery: [
       ["images/ar-1.webp", "Home screen: tap Scan to start"],
       ["images/ar-2.webp", "My Collection: the animals you have collected"],
       ["images/ar-3.webp", "AR scan: a 3D cat appears on the card"],
       ["images/ar-4.webp", "Animal detail: the cat in a 3D scene"]
     ], icon: "🦁 👓", shot: "Unity Raycasting & AR Collectibles", caption: "Vuforia Image Target Tracking Fixed Collider", kicker: "MULTIMEDIA & MIXED REALITY", year: "2026", title: "AR Animal App", text: "A Unity/Vuforia Android AR app built for early childhood education for a Multimedia & Mixed Reality course, with a group of 5; she was de facto lead developer, building the collectibles system, tap-detection raycasting, and particle effects, and managing the team's GitHub workflow. Heikal Ghazni Ibrahim designed the UI.", tags: ["Unity", "Vuforia", "C#"], link: ["View on GitHub ↗", "https://github.com/coppi-ux"] },
-  { group: "academic", soon: true, badge: "RESEARCH PAPER", icon: "📡 ⚡", shot: "SIMULATION DATA & S-PARAMETER PLOTS (45–870 MHz)", caption: "FT50-61 vs FT37-61 NiZn Ferrite Core Simulation", kicker: "RESEARCH METHODOLOGY", year: "2026", title: "RF Transformer Comparative Study", text: "A research paper for a Research Methodology course comparing FT50-61 vs FT37-61 NiZn ferrite cores for a wideband RF transmission-line transformer (45-870 MHz) for passive radar. First author and simulation lead. Co-authors: Melisa Lea Andrea, Emmanuel Keith Hadipradja; corresponding author and supervisor: Livia Janice Widiapradja.", tags: ["RF Engineering", "Simulation", "Passive Radar"], status: "Status: In progress — being refined for conference submission" },
+  { group: "academic", badge: "RESEARCH PAPER", icon: "📡 ⚡", shot: "SIMULATION DATA & S-PARAMETER PLOTS (45–870 MHz)", caption: "FT50-61 vs FT37-61 NiZn Ferrite Core Simulation", kicker: "RESEARCH METHODOLOGY", year: "2026", title: "RF Transformer Comparative Study", text: "A research paper for a Research Methodology course comparing FT50-61 vs FT37-61 NiZn ferrite cores for a wideband RF transmission-line transformer (45-870 MHz) for passive radar. First author and simulation lead. Co-authors: Melisa Lea Andrea, Emmanuel Keith Hadipradja; corresponding author and supervisor: Livia Janice Widiapradja.", tags: ["RF Engineering", "Simulation", "Passive Radar"],image: "images/paper.png", gallery: [
+      ["images/paper.png", "Paper's Title Page"]], status: "Status: In progress — being refined for conference submission" },
   { group: "academic", soon: true, icon: "🥗 📷", shot: "Computer Vision Ingredient Scanner", caption: "Real-time Detection & Recipe Retrieval Engine", kicker: "COMPUTER VISION", year: "Ongoing", title: "CookItUp", text: "A Flutter food scanner app built with a teammate for a Computer Vision course; she's currently expanding its recipe sources and image retrieval pipelines.", tags: ["Flutter", "Computer Vision", "Mobile Scanner"], status: "Status: In progress — not yet public" },
   { group: "academic", brief: "A C terminal app for renting musical instruments.", image: "images/rhythm-cover.webp", gallery: [
       ["images/rhythm-1.webp", "Main menu: user, admin or exit"],
@@ -49,6 +50,12 @@ const projects = [
       ["images/rhythm-3.webp", "Instrument list with price and status"],
       ["images/rhythm-4.webp", "Renting an instrument by its ID"]
     ], kicker: "DATA STRUCTURES", year: "2024", title: "Rhythm Rentals", caption: "C Standard I/O • Data Structures Course", terminal: [["cmd", "> ./rhythm_rentals --auth admin"], ["ok", "[OK] Linked-list queue initialized (size: 64)"], ["warn", "> calculate_late_fee(rental_id: 104) -> IDR 45,000"], ["pass", "> File persistence sync: PASS"]], text: "A C terminal application for a Data Structures course: an instrument rental system with a linked-list queue, file persistence, role-based login, and late-fee calculation.", tags: ["C Language", "Data Structures", "CLI & File I/O"], link: ["View on GitHub ↗", "https://github.com/coppi-ux/CollegeProject"] },
+  { group: "academic", kicker: "EMBEDDED SYSTEMS", year: "2026", title: "Ultrasonic-Based Smart Headband", text: "A wearable assistive device designed to help visually impaired users detect obstacles using ultrasonic distance sensing and audio alerts. Built with an Arduino Nano and HC-SR04 sensor, the prototype activates a buzzer when an obstacle enters a predefined distance range.", tags: ["Arduino", "HC-SR04", "Embedded Systems"],image: "images/headband/16.png",
+  gallery: [
+    ["images/headband/16.png", "Headband's side view"],
+    ["images/headband/17.png", "Headband's front view"],
+    ["images/headband/18.png", "Headband's side view"]
+  ], link: ["View Project Deck ↗", "https://canva.link/a0fu4cb92ji3fi2"] },
 ];
 
 const experience = [
@@ -114,9 +121,22 @@ const slide = p => `
     ${p.link ? `<a href="${p.link[1]}">${esc(p.link[0])}</a>` : ""}
   </article>`;
 
+
 ["featured", "personal", "academic"].forEach(g => {
-  const items = projects.filter(p => p.group === g);
-  document.getElementById(g + "-list").innerHTML = items.map(g === "featured" ? card : slide).join("");
+  const items = projects
+    .filter(p => p.group === g)
+    .sort((a, b) => {
+      // Ongoing projects come first
+      if (a.year === "Ongoing" && b.year !== "Ongoing") return -1;
+      if (b.year === "Ongoing" && a.year !== "Ongoing") return 1;
+
+      // Otherwise, sort from newest year to oldest
+      return (parseInt(b.year, 10) || 0) -
+             (parseInt(a.year, 10) || 0);
+    });
+
+  document.getElementById(g + "-list").innerHTML =
+    items.map(g === "featured" ? card : slide).join("");
 });
 
 document.getElementById("experience-list").innerHTML = experience.map(e => `
